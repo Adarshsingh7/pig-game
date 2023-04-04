@@ -29,11 +29,11 @@ const random = function () {
 //adding click to roll
 rollDiceEl.addEventListener('click', function () {
   const number = random();
+  dice.src = `dice-${number}.png`;
   if (number != 1) {
     current += number;
 
     dice.classList.remove('hidden');
-    dice.src = `dice-${number}.png`;
 
     //adding active property to the player
     if (playerEl1.classList.contains('player--active')) {
