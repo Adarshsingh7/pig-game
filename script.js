@@ -69,7 +69,7 @@ holdBtn.addEventListener('click', function () {
     current = 0;
 
     //winner functionality
-    if (score1 >= 10) {
+    if (score1 >= 100) {
       playerEl1.classList.add('player--winner');
       document.getElementById('name--0').textContent = 'WINNER';
       rollDiceEl.classList.add('hidden');
@@ -85,7 +85,7 @@ holdBtn.addEventListener('click', function () {
     current = 0;
 
     //winner winner chicken dinner
-    if (score2 >= 10) {
+    if (score2 >= 100) {
       playerEl2.classList.add('player--winner');
       document.getElementById('name--1').textContent = 'WINNER';
       rollDiceEl.classList.add('hidden');
